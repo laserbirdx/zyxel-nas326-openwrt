@@ -15,7 +15,7 @@ Upstream support commit: [openwrt/openwrt@471dd1b](https://github.com/openwrt/op
 
 ### Hardware
 
-| | |
+| Component | Specification |
 |---|---|
 | CPU | Marvell ARMADA 380, 1x 1332 MHz (Cortex-A9) |
 | RAM | 512 MB DDR3 |
@@ -36,8 +36,6 @@ The stock U-Boot identifies the board as `PRODUCT_NAME=STG-328`, `VENDOR_NAME=Mi
 | [`firmware/…-initramfs-kernel.bin`](firmware/openwrt-25.12.6-mvebu-cortexa9-zyxel_nas326-initramfs-kernel.bin) | RAM boot via TFTP (first install / recovery) | `14f59321…2d7b305a` |
 | [`firmware/…-squashfs-sysupgrade.bin`](firmware/openwrt-25.12.6-mvebu-cortexa9-zyxel_nas326-squashfs-sysupgrade.bin) | Permanent install via LuCI or `sysupgrade` | `0413d3c9…c337bcf5` |
 | [`firmware/sha256sums`](firmware/sha256sums) | Full checksums | |
-| [`tools/serial_cmd.ps1`](tools/serial_cmd.ps1) | Send one command over serial (Windows, no PuTTY needed) | |
-| [`tools/serial_read.ps1`](tools/serial_read.ps1) | Read serial output (e.g. boot log) | |
 
 The images are unmodified official builds from [downloads.openwrt.org](https://downloads.openwrt.org/releases/25.12.6/targets/mvebu/cortexa9/). Prefer downloading newer versions from there.
 
@@ -125,22 +123,13 @@ Install `i2c-tools` first (`apk add i2c-tools`).
 | Enable auto power-on | `i2cset -y 0x0 0x0a 0x0a 0x0107 w` |
 | Disable auto power-on | `i2cset -y 0x0 0x0a 0x0a 0x0007 w` |
 
-### Serial tools (Windows)
-
-```powershell
-powershell -ExecutionPolicy Bypass -File tools\serial_cmd.ps1 -Port COM48 -Command "printenv"
-powershell -ExecutionPolicy Bypass -File tools\serial_read.ps1 -Port COM48 -WaitMs 15000
-```
-
-Find your COM port in Device Manager (e.g. "USB Serial Port (COMxx)" for FTDI adapters).
-
 ---
 
 ## Türkçe
 
 ### Donanım
 
-| | |
+| Bileşen | Özellik |
 |---|---|
 | CPU | Marvell ARMADA 380, 1x 1332 MHz (Cortex-A9) |
 | RAM | 512 MB DDR3 |
@@ -161,8 +150,6 @@ Orijinal U-Boot kartı `PRODUCT_NAME=STG-328`, `VENDOR_NAME=MitraStar Technology
 | [`firmware/…-initramfs-kernel.bin`](firmware/openwrt-25.12.6-mvebu-cortexa9-zyxel_nas326-initramfs-kernel.bin) | TFTP ile RAM'den boot (ilk kurulum / kurtarma) |
 | [`firmware/…-squashfs-sysupgrade.bin`](firmware/openwrt-25.12.6-mvebu-cortexa9-zyxel_nas326-squashfs-sysupgrade.bin) | LuCI veya `sysupgrade` ile kalıcı kurulum |
 | [`firmware/sha256sums`](firmware/sha256sums) | SHA256 değerleri |
-| [`tools/serial_cmd.ps1`](tools/serial_cmd.ps1) | Seri porttan tek komut gönderir (Windows, PuTTY gerekmez) |
-| [`tools/serial_read.ps1`](tools/serial_read.ps1) | Seri port çıktısını okur (ör. boot log) |
 
 İmajlar [downloads.openwrt.org](https://downloads.openwrt.org/releases/25.12.6/targets/mvebu/cortexa9/) adresindeki resmi, değiştirilmemiş dosyalardır. Yeni sürümleri oradan indirmeniz önerilir.
 
@@ -249,15 +236,6 @@ U-Boot ortamında `ethaddr` olarak saklanır; etiket MAC'i = eth0 MAC'i.
 | WoL kapat | `i2cset -y 0x0 0xa 0xa 0x0306 w` |
 | Elektrik gelince otomatik açılma: aç | `i2cset -y 0x0 0x0a 0x0a 0x0107 w` |
 | Elektrik gelince otomatik açılma: kapat | `i2cset -y 0x0 0x0a 0x0a 0x0007 w` |
-
-### Seri port araçları (Windows)
-
-```powershell
-powershell -ExecutionPolicy Bypass -File tools\serial_cmd.ps1 -Port COM48 -Command "printenv"
-powershell -ExecutionPolicy Bypass -File tools\serial_read.ps1 -Port COM48 -WaitMs 15000
-```
-
-COM port numaranızı Aygıt Yöneticisi'nden bulun (FTDI adaptörlerde "USB Serial Port (COMxx)").
 
 ---
 
