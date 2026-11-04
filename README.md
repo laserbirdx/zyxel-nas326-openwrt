@@ -239,4 +239,16 @@ U-Boot ortamında `ethaddr` olarak saklanır; etiket MAC'i = eth0 MAC'i.
 
 ---
 
+## License / Lisans
+
+The guide (this README) is licensed under [CC BY 4.0](LICENSE).
+The firmware images in `firmware/` are unmodified official OpenWrt 25.12.6 builds, licensed under GPL-2.0.
+Source code: [openwrt/openwrt @ v25.12.6](https://github.com/openwrt/openwrt/tree/v25.12.6),
+official downloads: [downloads.openwrt.org](https://downloads.openwrt.org/releases/25.12.6/targets/mvebu/cortexa9/).
+
+Bu rehber [CC BY 4.0](LICENSE) ile lisanslıdır. `firmware/` içindeki imajlar değiştirilmemiş resmi
+OpenWrt 25.12.6 derlemeleridir ve GPL-2.0 lisanslıdır; kaynak kodu ve resmi indirme bağlantıları yukarıda.
+
+---
+
 <sub>OpenWrt is GPL-licensed. Device support by Robert Senderek, merged upstream by Robert Marko and Hauke Mehrtens. Use at your own risk / Risk size aittir.</sub>
