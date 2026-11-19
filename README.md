@@ -4,7 +4,12 @@
 
 # OpenWrt on Zyxel NAS326
 
-![OpenWrt: 25.12.6 (mvebu/cortexa9)](https://img.shields.io/badge/OpenWrt-25.12.6%20(mvebu%2Fcortexa9)-00B5E2?logo=openwrt&logoColor=white) ![SoC: Marvell ARMADA 380](https://img.shields.io/badge/SoC-Marvell%20ARMADA%20380-informational) ![lang: EN / TR](https://img.shields.io/badge/lang-EN%20%2F%20TR-orange) ![license: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)
+<p align="center">
+  <img src="https://img.shields.io/badge/OpenWrt-25.12.6%20%28mvebu%2Fcortexa9%29-00B5E2?logo=openwrt&logoColor=white" alt="OpenWrt: 25.12.6 (mvebu/cortexa9)" />
+  <img src="https://img.shields.io/badge/SoC-Marvell%20ARMADA%20380-informational" alt="SoC: Marvell ARMADA 380" />
+  <img src="https://img.shields.io/badge/lang-EN%20%2F%20TR-orange" alt="lang: EN / TR" />
+  <img src="https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey" alt="license: CC BY 4.0" />
+</p>
 
 **[English](#english) | [Türkçe](#türkçe)**
 
