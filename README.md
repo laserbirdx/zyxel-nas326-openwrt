@@ -4,6 +4,8 @@
 
 # OpenWrt on Zyxel NAS326
 
+![OpenWrt: 25.12.6 (mvebu/cortexa9)](https://img.shields.io/badge/OpenWrt-25.12.6%20(mvebu%2Fcortexa9)-00B5E2?logo=openwrt&logoColor=white) ![SoC: Marvell ARMADA 380](https://img.shields.io/badge/SoC-Marvell%20ARMADA%20380-informational) ![lang: EN / TR](https://img.shields.io/badge/lang-EN%20%2F%20TR-orange) ![license: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey)
+
 **[English](#english) | [Türkçe](#türkçe)**
 
 Tested: **OpenWrt 25.12.6 (r33311-981c978eff)**, Linux 6.12.112, target `mvebu/cortexa9`.
